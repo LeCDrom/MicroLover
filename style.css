@@ -1,0 +1,42 @@
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+}
+
+.title {
+    display: flex;
+}
+
+.pages {
+    display: flex;
+    background-color: red;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: var(--loader-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-link:last-child a:hover{
+    color: var(--primary-color);
+    border-bottom: none;
+}
+
+.fa-solid {
+    
+}
