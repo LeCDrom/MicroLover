@@ -28,9 +28,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gainsboro;
+    background-color: white;
     font-weight: 200;
-    padding: 20px 76px;
+    padding: 30px 88px;
 }
 
 .title {
@@ -41,25 +41,30 @@ header {
 
 .pages {    
     display: flex;
-    background-color: gainsboro;
+    background-color: white;
     width: 420px;
     justify-content: space-between;
     align-items: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    font-size: 105%;
+}
+
+#cart {
+    
 }
 
 .presentation {
-    padding-inline: 76px;
+    padding-inline: 88px;
     padding-top: 50px;
-    background-color: gainsboro;
+    background-color: white;
 }
 
 
 .presentation .blue-buttons {
     border-radius: 30px;
     min-height: 50px;
-    padding-inline: 25px;
+    padding-inline: 30px;
     font-size: 18px;
 }
 
@@ -68,11 +73,25 @@ header {
 }
 
 .description {
-    margin: 30px 0px 30px 0px;
+    margin: 20px 0px 20px 0px;
+    margin-right: 54.5%;
 }
 
-#pc-image {
+#blue-circle {
+    background-color: #3f65f0;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 100%;
+}
 
+#pc-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 75%;
 }
 
 #accroche {
