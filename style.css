@@ -50,7 +50,7 @@ header {
 }
 
 .presentation {
-    padding-left: 76px;
+    padding-inline: 76px;
     padding-top: 50px;
     background-color: gainsboro;
 }
@@ -65,11 +65,10 @@ header {
 
 #accroche {
     font-size: 50px;
-    margin-bottom: 30px;
 }
 
 .description {
-    margin-right: 50%;
+    margin: 30px 0px 30px 0px;
 }
 
 #pc-image {
@@ -77,9 +76,9 @@ header {
 }
 
 #accroche {
-    background-color: red;
+    background-color: white;
 }
 
 .description {
-    background-color: red;
+    background-color: white;
 }
