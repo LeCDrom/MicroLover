@@ -1,5 +1,26 @@
 * {
-    font-family: 'poppins', sans-serif;
+    font-family: 'arial', sans-serif;
+    margin: 0;
+}
+
+.blue-text {
+    color: #3f65f0;
+}
+
+.blue-buttons {
+    background-color: #3f65f0;
+    color: white;
+    border-style: none;
+}
+
+#login-buttons .blue-buttons {
+    border-radius: 10px;
+    min-height: 35px;
+    padding-inline: 1vw;
+}
+
+.description .blue-text {
+    font-style: italic;
 }
 
 header {
@@ -7,36 +28,58 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: yellow;
+    background-color: gainsboro;
+    font-weight: 200;
+    padding: 20px 76px;
 }
 
 .title {
     display: flex;
+    font-weight: 200;
+    font-size: 40px;
 }
 
-.pages {
+.pages {    
     display: flex;
-    background-color: red;
-    width: 30vw;
+    background-color: gainsboro;
+    width: 420px;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
-.nav-link {
-    color: var(--loader-color);
-    text-decoration: none;
-    transition: 0.5s;
+.presentation {
+    padding-left: 76px;
+    padding-top: 50px;
+    background-color: gainsboro;
 }
 
-.nav-link:hover {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+
+.presentation .blue-buttons {
+    border-radius: 30px;
+    min-height: 50px;
+    padding-inline: 25px;
+    font-size: 18px;
 }
 
-.nav-link:last-child a:hover{
-    color: var(--primary-color);
-    border-bottom: none;
+#accroche {
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
-.fa-solid {
-    
+.description {
+    margin-right: 50%;
+}
+
+#pc-image {
+
+}
+
+#accroche {
+    background-color: red;
+}
+
+.description {
+    background-color: red;
 }
