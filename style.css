@@ -23,11 +23,11 @@
     }
 
     .description {
-        padding-right: 54.5%;
+        padding-right: 55%;
     }
 
     .presentation .blue-buttons {
-        min-height: 51px;
+        min-height: 49px;
         font-size: 18px;
     }
 }
@@ -70,7 +70,7 @@
     }
 
     .presentation .blue-buttons {
-        min-height: 45px;
+        min-height: 43px;
         font-size: 15px;
     }
 }
@@ -82,7 +82,9 @@
 .blue-buttons {
     background-color: #3f65f0;
     color: white;
-    border-style: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3f65f0;
 }
 
 #login-buttons .blue-buttons {
@@ -101,7 +103,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 30px 88px;
+    padding: 30px 80px;
 }
 
 .title {
@@ -119,8 +121,14 @@ header {
     font-size: 105%;
 }
 
+.blue-buttons:hover {
+    background-color: white;
+    border-color: #3f65f0;
+    color: #3f65f0;
+}
+
 .presentation {
-    padding-inline: 88px;
+    padding-inline: 80px;
     padding-top: 50px;
     background-color: white;
 }
@@ -153,4 +161,80 @@ header {
 
 #accroche {
     background-color: white;
+}
+
+.balls {
+    width: 3.5em;
+    display: fixed
+}
+
+
+/* Full-screen loading container */
+#loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 2, 32);
+    z-index: 9999; /* Keep it above other content */
+    animation: fadeOut 2s ease 2s forwards; /* Delayed fade-out animation */
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+}
+
+/* Styling for "Chargement" text */
+#loading h1 {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: white;
+}
+
+/* Balls animation */
+.balls {
+    width: 1.1em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.balls div {
+    width: 0.23em;
+    height: 0.23em;
+    background-color: white;
+    animation: bounce 2s ease-in-out alternate infinite;
+}
+
+.balls div:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+.balls div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+  
+.balls div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 20%, 100% {
+      transform: translateY(10px);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(10px);
+    }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
