@@ -152,11 +152,24 @@ header {
     border-top-left-radius: 100%;
 }
 
-#pc-img {
+#img-block {
     position: absolute;
-    bottom: 3px;
-    right: 50px;
-    width: 77%;
+    bottom: 0px;
+    right: 0px;
+}
+
+#pc-img {
+    width: 500px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#pc-img:hover {
+    transform: scale(0.75);
+}
+
+#pc-img:hover {
+    
 }
 
 #accroche {
@@ -169,7 +182,7 @@ header {
 }
 
 
-/* Full-screen loading container */
+/* Conteneur chargement plein écran */
 #loading {
     position: fixed;
     width: 100vw;
@@ -184,14 +197,14 @@ header {
     font-size: 21px;
 }
 
-/* Styling for "Chargement" text */
+/* Texte chargement */
 #loading h1 {
     font-size: 1.5em;
     margin-right: 0.5em;
     color: white;
 }
 
-/* Balls animation */
+/* Style points */
 .balls {
     width: 1.1em;
     display: flex;
@@ -219,6 +232,7 @@ header {
     animation-delay: 0.4s;
 }
 
+/*  */
 @keyframes bounce {
     0%, 20%, 100% {
       transform: translateY(10px);
@@ -231,7 +245,7 @@ header {
     }
 }
 
-/* Fade-out animation */
+/* Fondu chargement */
 @keyframes fadeOut {
     to {
         opacity: 0;
